@@ -1,0 +1,7 @@
+node ('worker1') {
+  stage('Source') {
+    // Gets some code from a git repository
+    git 'https://github.com/brentlaster/gradle-greetings.git'
+  }
+}
+

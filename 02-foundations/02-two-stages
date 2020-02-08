@@ -1,0 +1,11 @@
+node ('worker1') {
+  stage('Source') {
+    // Gets some code from a git repository
+    git 'https://github.com/brentlaster/gradle-greetings.git'
+  }
+  stage('Build') {
+    // TODO: Execute grade build associated with the cloned project
+    sh "echo The Grade build will go here"
+  }
+}
+
